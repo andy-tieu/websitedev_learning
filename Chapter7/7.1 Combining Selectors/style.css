@@ -3,6 +3,23 @@ h1, h2 {
     color: blueviolet;
 }
 
+/* Child/parent selector */
 .box > p {
     color: firebrick;
+}
+
+/* For descendant selector, .box li would yield same result */
+.list li { 
+    color: blue;
+}
+
+/* When chaining, make sure element is always first */
+li.done {
+    color: seagreen;
+}
+
+/* We can combine combiners together for even more specific changes 
+   Child selector works here but so does descendant selector where 'ul p.done' */
+ul > p.done {
+    font-size: 0.5rem;
 }
