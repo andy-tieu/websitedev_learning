@@ -19,11 +19,84 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .painting {
+      background-color: #000;
+      display: grid;
+      width: 748px;
+      height: 748px;
+      grid-template: 414px 132px 155px 20px / 320px 198px 153px 50px;
+      gap: 9px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-area: 2 / 4 / 3 / -1;
+      border-bottom: 10px solid #000;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      grid-area: 4 / 2 / -1 / 3;
+    }
+
+    .black {
+      background-color: #232629;
+      grid-area: 4 / 3 / -1 / 4;
+    }
+
+    .white1 {
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+
+    .white2 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .white3 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .white4 {
+      background-color: #F0F1EC;
+      grid-area: 3 / 4 / -1 / -1;
+    }
+
+    .white5 {
+      background-color: #F0F1EC;
+      grid-area: 4 / 1 / 5 / 2;
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+   <div class = "body">
+    <div class = "painting">
+      <div class = "item red"></div>
+      <div class = "item blue"></div>
+      <div class = "item yellow"></div>
+      <div class = "item black"></div>
+      <div class = "item white1"></div>
+      <div class = "item white2"></div>
+      <div class = "item white3"></div>
+      <div class = "item white4"></div>
+      <div class = "item white5"></div>
+    </div>
+   </div>
 </body>
 
 </html>
